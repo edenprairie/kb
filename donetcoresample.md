@@ -10,7 +10,7 @@ cd .\src\AlbumViewerNetCore
 dotnet run
 ```
 
-## Install .net core on ubuntu Linux
+## Install .net core on ubuntu Linux 16.04
 - https://www.microsoft.com/net/download/linux-package-manager/ubuntu16-04/sdk-current
 Register Microsoft key and feed
 Before installing .NET, you'll need to register the Microsoft key, register the product repository, and install required dependencies. This only needs to be done once per machine.
@@ -31,3 +31,5 @@ sudo apt-get install apt-transport-https
 sudo apt-get update
 sudo apt-get install dotnet-sdk-2.1.200
 ```
+If you need to install on 18.04 Ubuntu, please refer to this. 
+https://www.microsoft.com/net/download/linux-package-manager/ubuntu18-04/sdk-current 
