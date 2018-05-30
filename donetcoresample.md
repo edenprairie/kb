@@ -9,3 +9,6 @@ dotnet restore
 cd .\src\AlbumViewerNetCore
 dotnet run
 ```
+
+## Install .net core on ubuntu Linux
+- https://www.microsoft.com/net/download/linux-package-manager/ubuntu16-04/sdk-current
