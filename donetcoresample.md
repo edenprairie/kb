@@ -11,7 +11,9 @@ dotnet run
 ```
 
 ## Install .net core on ubuntu Linux 16.04
+
 - https://www.microsoft.com/net/download/linux-package-manager/ubuntu16-04/sdk-current
+
 Register Microsoft key and feed
 Before installing .NET, you'll need to register the Microsoft key, register the product repository, and install required dependencies. This only needs to be done once per machine.
 
