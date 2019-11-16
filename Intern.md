@@ -14,6 +14,7 @@ https://www.medtronic.com/us-en/about/careers/student-opportunities.html
 
 ## CVS Health   
 https://jobs.cvshealth.com/internships?prefilters=none&CloudSearchLocation=none
+http://bit.ly/2OdycHA 
 
 ## Amazon   
 https://www.amazon.jobs/en/teams/internships-for-students
