@@ -1,4 +1,4 @@
-# Intership for students:  
+# Internship for students:  
 
 ## United Healthcare   
 https://careers.unitedhealthgroup.com/early-careers
