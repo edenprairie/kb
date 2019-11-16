@@ -24,6 +24,5 @@ https://www.amazon.jobs/en/teams/internships-for-students
 https://careers.google.com/students/  
 
 ## Facebook   
-https://www.facebook.com/careers/students-and-grads/?teams[0]=Internship%20-%20Engineering%2C%20Tech%20%26%20Design&teams[1]=Internship%20-%20Business&teams[2]=Internship%20-%20PhD&teams[3]=University%20Grad%20-%20PhD%20%26%20Postdoc&teams[4]=University%20Grad%20-%20Engineering%2C%20Tech%20%26%20Design&teams[5]=University%20Grad%20-%20Business 
-
+http://bit.ly/2OkE3ej
 
