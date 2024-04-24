@@ -1,3 +1,5 @@
+# dotNET QA
+
 ## What’s the advantage of using System.Text.StringBuilder over System.String? 
 StringBuilder is more efficient in the cases, where a lot of manipulation is done to the text. 
 Strings are immutable, so each time it’s being operated on, a new instance is created.

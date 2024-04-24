@@ -1,6 +1,5 @@
 
-![Linux](https://github.com/jenac/kb/blob/master/linux.jpeg?raw=true)
-## Systemd to start docker containers at startup
+# Systemd to start docker containers at startup
 create ci service
 ```
 sudo nano /lib/systemd/system/ci.service 

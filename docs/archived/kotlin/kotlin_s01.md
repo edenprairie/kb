@@ -1,4 +1,4 @@
-# Start with Kotlin
+# Starting with Kotlin
 * to speed up comile, in `build.gradle` add the following:
 ```
 kotlin.incremental=true

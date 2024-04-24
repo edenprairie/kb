@@ -1,0 +1,23 @@
+site_name: Lihe's Notes
+theme:
+  name: material
+plugins:
+    - search
+    - mermaid2:
+        arguments:
+          theme: 'light'
+
+
+extra_javascript:
+    - https://unpkg.com/mermaid/dist/mermaid.min.js
+
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.snippets
+  - pymdownx.progressbar
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid

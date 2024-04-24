@@ -1,4 +1,3 @@
-![Ubuntu](https://github.com/jenac/kb/blob/master/images.png?raw=true)
 
 # Allow insecure registry for docker on Ubuntu
 
