@@ -1,0 +1,1491 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../angular/angular_s05/" rel="prev"/>
+<link href="../../golang/golang_s01/" rel="next"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.5.3, mkdocs-material-9.5.18" name="generator"/>
+<title>dotNET QA - Lihe's Notes</title>
+<link href="../../../assets/stylesheets/main.66ac8b77.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#dotnet-qa">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Lihe's Notes" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Lihe's Notes">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Lihe's Notes
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              dotNET QA
+            
+          </span>
+</div>
+</div>
+</div>
+<script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Lihe's Notes" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Lihe's Notes">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    Lihe's Notes
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    Welcome to Lihe's Notes
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Archived
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Archived
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Angular
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_1">
+<span class="md-nav__icon md-icon"></span>
+            Angular
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../angular/angular_s01/">
+<span class="md-ellipsis">
+    Angluar Basics
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../angular/angular_s02/">
+<span class="md-ellipsis">
+    Nested Components
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../angular/angular_s03/">
+<span class="md-ellipsis">
+    Navigation and Routers
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../angular/angular_s04/">
+<span class="md-ellipsis">
+    Angular Cli
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../angular/angular_s05/">
+<span class="md-ellipsis">
+    MISC
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Dotnet
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+            Dotnet
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    dotNET QA
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    dotNET QA
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-the-advantage-of-using-systemtextstringbuilder-over-systemstring">
+<span class="md-ellipsis">
+      What’s the advantage of using System.Text.StringBuilder over System.String?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#can-you-store-multiple-data-types-in-systemarray">
+<span class="md-ellipsis">
+      Can you store multiple data types in System.Array?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-can-you-sort-the-elements-of-the-array-in-descending-order">
+<span class="md-ellipsis">
+      How can you sort the elements of the array in descending order?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-the-net-datatype-that-allows-the-retrieval-of-data-by-a-unique-key">
+<span class="md-ellipsis">
+      What’s the .NET datatype that allows the retrieval of data by a unique key?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-class-sortedlist-underneath">
+<span class="md-ellipsis">
+      What’s class SortedList underneath?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#will-finally-block-get-executed-if-the-exception-had-not-occurred">
+<span class="md-ellipsis">
+      Will finally block get executed if the exception had not occurred?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-the-c-equivalent-of-c-catch-which-was-a-catch-all-statement-for-any-possible-exception">
+<span class="md-ellipsis">
+      What’s the C# equivalent of C++ catch (…), which was a catch-all statement for any possible exception?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#can-multiple-catch-blocks-be-executed">
+<span class="md-ellipsis">
+      Can multiple catch blocks be executed?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why-is-it-a-bad-idea-to-throw-your-own-exceptions">
+<span class="md-ellipsis">
+      Why is it a bad idea to throw your own exceptions?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-a-delegate">
+<span class="md-ellipsis">
+      What’s a delegate?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-a-multicast-delegate">
+<span class="md-ellipsis">
+      What’s a multicast delegate?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hows-the-dll-hell-problem-solved-in-net">
+<span class="md-ellipsis">
+      How’s the DLL Hell problem solved in .NET?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-are-the-ways-to-deploy-an-assembly">
+<span class="md-ellipsis">
+      What are the ways to deploy an assembly?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-a-satellite-assembly">
+<span class="md-ellipsis">
+      What’s a satellite assembly?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-namespaces-are-necessary-to-create-a-localized-application">
+<span class="md-ellipsis">
+      What namespaces are necessary to create a localized application?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-the-difference-between-comments-comments-and-comments">
+<span class="md-ellipsis">
+      What’s the difference between // comments, / / comments and /// comments?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-do-you-generate-documentation-from-the-c-file-commented-properly-with-a-command-line-compiler">
+<span class="md-ellipsis">
+      How do you generate documentation from the C# file commented properly with a command-line compiler?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-the-difference-between-c-and-code-xml-documentation-tag">
+<span class="md-ellipsis">
+      What’s the difference between &lt;c&gt; and &lt;code&gt; XML documentation tag?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#is-xml-case-sensitive">
+<span class="md-ellipsis">
+      Is XML case-sensitive?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-debugging-tools-come-with-the-net-sdk">
+<span class="md-ellipsis">
+      What debugging tools come with the .NET SDK?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-does-the-this-window-show-in-the-debugger">
+<span class="md-ellipsis">
+      What does the This window show in the debugger?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-does-assert-do">
+<span class="md-ellipsis">
+      What does assert() do?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-the-difference-between-the-debug-class-and-trace-class-documentation-looks-the-same">
+<span class="md-ellipsis">
+      What’s the difference between the Debug class and Trace class? Documentation looks the same.
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why-are-there-five-tracing-levels-in-systemdiagnosticstraceswitcher">
+<span class="md-ellipsis">
+      Why are there five tracing levels in System.Diagnostics.TraceSwitcher?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#where-is-the-output-of-textwritertracelistener-redirected">
+<span class="md-ellipsis">
+      Where is the output of TextWriterTraceListener redirected?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-do-you-debug-an-aspnet-web-application">
+<span class="md-ellipsis">
+      How do you debug an ASP.NET Web application?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-are-three-test-cases-you-should-go-through-in-unit-testing">
+<span class="md-ellipsis">
+      What are three test cases you should go through in unit testing?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#can-you-change-the-value-of-a-variable-while-debugging-a-c-application">
+<span class="md-ellipsis">
+      Can you change the value of a variable while debugging a C# application?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#explain-the-three-services-model-three-tier-application">
+<span class="md-ellipsis">
+      Explain the three services model (three-tier application).
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-are-advantages-and-disadvantages-of-microsoft-provided-data-provider-classes-in-adonet">
+<span class="md-ellipsis">
+      What are advantages and disadvantages of Microsoft-provided data provider classes in ADO.NET?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-the-role-of-the-datareader-class-in-adonet-connections">
+<span class="md-ellipsis">
+      What’s the role of the DataReader class in ADO.NET connections?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-the-wildcard-character-in-sql-lets-say-you-want-to-query-database-with-like-for-all-employees-whose-name-starts-with-la">
+<span class="md-ellipsis">
+      What is the wildcard character in SQL? Let’s say you want to query database with LIKE for all employees whose name starts with La.
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#explain-acid-rule-of-thumb-for-transactions">
+<span class="md-ellipsis">
+      Explain ACID rule of thumb for transactions.
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-connections-does-microsoft-sql-server-support">
+<span class="md-ellipsis">
+      What connections does Microsoft SQL Server support?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#which-one-is-trusted-and-which-one-is-untrusted">
+<span class="md-ellipsis">
+      Which one is trusted and which one is untrusted?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why-would-you-use-untrusted-verificaion">
+<span class="md-ellipsis">
+      Why would you use untrusted verificaion?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-does-the-parameter-initial-catalog-define-inside-connection-string">
+<span class="md-ellipsis">
+      What does the parameter Initial Catalog define inside Connection String?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-the-data-provider-name-to-connect-to-access-database">
+<span class="md-ellipsis">
+      What’s the data provider name to connect to Access database?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-does-dispose-method-do-with-the-connection-object">
+<span class="md-ellipsis">
+      What does Dispose method do with the connection object?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-a-pre-requisite-for-connection-pooling">
+<span class="md-ellipsis">
+      What is a pre-requisite for connection pooling?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-the-difference-between-a-where-clause-and-a-having-clause">
+<span class="md-ellipsis">
+      What is the difference between a "where" clause and a "having" clause?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-the-basic-form-of-a-sql-statement-to-read-data-out-of-a-table">
+<span class="md-ellipsis">
+      What is the basic form of a SQL statement to read data out of a table?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-structure-can-you-implement-for-the-database-to-speed-up-table-reads">
+<span class="md-ellipsis">
+      What structure can you implement for the database to speed up table reads?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-are-the-tradeoffs-with-having-indexes">
+<span class="md-ellipsis">
+      What are the tradeoffs with having indexes?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-a-join">
+<span class="md-ellipsis">
+      What is a "join"?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-normalization-denormalization-why-do-you-sometimes-want-to-denormalize">
+<span class="md-ellipsis">
+      What is "normalization"? "Denormalization"? Why do you sometimes want to denormalize?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-a-constraint">
+<span class="md-ellipsis">
+      What is a "constraint"?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-types-of-index-data-structures-can-you-have">
+<span class="md-ellipsis">
+      What types of index data structures can you have?
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Golang
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+            Golang
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../golang/golang_s01/">
+<span class="md-ellipsis">
+    Environment Setup
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Kotlin
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_4">
+<span class="md-nav__icon md-icon"></span>
+            Kotlin
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../kotlin/kotlin_s00/">
+<span class="md-ellipsis">
+    Programming with Objects
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../kotlin/kotlin_s01/">
+<span class="md-ellipsis">
+    Starting with Kotlin
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../kotlin/kotlin_s02/">
+<span class="md-ellipsis">
+    OOP in Kotlin
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Linux
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_5">
+<span class="md-nav__icon md-icon"></span>
+            Linux
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../linux/linux_s01/">
+<span class="md-ellipsis">
+    Ubuntu 16.04 no wifi at start up issue
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../linux/linux_s02/">
+<span class="md-ellipsis">
+    Systemd to start docker containers at startup
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../linux/linux_s03/">
+<span class="md-ellipsis">
+    Allow insecure registry for docker on Ubuntu
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Python
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_6_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_6">
+<span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../python/python_s00/">
+<span class="md-ellipsis">
+    Python 3
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../python/python_s01/">
+<span class="md-ellipsis">
+    Course and books
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../python/python_s02/">
+<span class="md-ellipsis">
+    Strings and Collections
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+<span class="md-ellipsis">
+    React
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_7_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_7">
+<span class="md-nav__icon md-icon"></span>
+            React
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/learning_react_s01/">
+<span class="md-ellipsis">
+    Emerging Javascript
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/learning_react_s02/">
+<span class="md-ellipsis">
+    Functional Programming with JavaScript
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/learning_react_s03/">
+<span class="md-ellipsis">
+    Pure React
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/learning_react_s04/">
+<span class="md-ellipsis">
+    Props, State, and the Component Tree
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+<span class="md-ellipsis">
+    Ts
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_8_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_8">
+<span class="md-nav__icon md-icon"></span>
+            Ts
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ts/ts_01/">
+<span class="md-ellipsis">
+    Install &amp; config
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ts/ts_02/">
+<span class="md-ellipsis">
+    Creating and using typescript module
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+<span class="md-ellipsis">
+    Web
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_9_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_9">
+<span class="md-nav__icon md-icon"></span>
+            Web
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../web/web_s01/">
+<span class="md-ellipsis">
+    Diff HTML5 Local storage vs. Session storage
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../web/web_s02/">
+<span class="md-ellipsis">
+    REST+JSON API Design - Best Practices
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../web/web_s03/">
+<span class="md-ellipsis">
+    CORS and withCredentials issue
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    K8s
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            K8s
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../k8s/helm_k8s/">
+<span class="md-ellipsis">
+    About HELM
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../k8s/k3s/">
+<span class="md-ellipsis">
+    Install kubectl
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../k8s/k8s-setup/">
+<span class="md-ellipsis">
+    Install and Configure Kubernetes (k8s) on Ubuntu 18.04 LTS
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../k8s/rke_k8s/">
+<span class="md-ellipsis">
+    Create K8S cluster using RKE
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Ops
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Ops
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ops/01_vault/">
+<span class="md-ellipsis">
+    Install HashCorp Vault on Raspberry Pi
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ops/02_jenkins_on_pi/">
+<span class="md-ellipsis">
+    Install Jenkins on raspberry pi
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Redis
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            Redis
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../redis/01_intro/">
+<span class="md-ellipsis">
+    Redis Intro
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../redis/02_key_ops/">
+<span class="md-ellipsis">
+    Common Operations on Key
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../redis/03_string/">
+<span class="md-ellipsis">
+    String
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../redis/04_list/">
+<span class="md-ellipsis">
+    List
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../redis/05_set/">
+<span class="md-ellipsis">
+    Set
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../redis/06_hash/">
+<span class="md-ellipsis">
+    Hash
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../redis/07_zset/">
+<span class="md-ellipsis">
+    Zset (sorted set)
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../redis/08_redis_conf/">
+<span class="md-ellipsis">
+    Redis configuration file
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../redis/09_transaction/">
+<span class="md-ellipsis">
+    Transactions
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../redis/10_persistance_rdb/">
+<span class="md-ellipsis">
+    Redis Persistence - RDB
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../redis/11_persistence_aof/">
+<span class="md-ellipsis">
+    Redis Persistence - AOF
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../redis/12_replication/">
+<span class="md-ellipsis">
+    Redis Replication
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../redis/13_cluster/">
+<span class="md-ellipsis">
+    Redis Cluster
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-the-advantage-of-using-systemtextstringbuilder-over-systemstring">
+<span class="md-ellipsis">
+      What’s the advantage of using System.Text.StringBuilder over System.String?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#can-you-store-multiple-data-types-in-systemarray">
+<span class="md-ellipsis">
+      Can you store multiple data types in System.Array?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-can-you-sort-the-elements-of-the-array-in-descending-order">
+<span class="md-ellipsis">
+      How can you sort the elements of the array in descending order?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-the-net-datatype-that-allows-the-retrieval-of-data-by-a-unique-key">
+<span class="md-ellipsis">
+      What’s the .NET datatype that allows the retrieval of data by a unique key?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-class-sortedlist-underneath">
+<span class="md-ellipsis">
+      What’s class SortedList underneath?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#will-finally-block-get-executed-if-the-exception-had-not-occurred">
+<span class="md-ellipsis">
+      Will finally block get executed if the exception had not occurred?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-the-c-equivalent-of-c-catch-which-was-a-catch-all-statement-for-any-possible-exception">
+<span class="md-ellipsis">
+      What’s the C# equivalent of C++ catch (…), which was a catch-all statement for any possible exception?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#can-multiple-catch-blocks-be-executed">
+<span class="md-ellipsis">
+      Can multiple catch blocks be executed?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why-is-it-a-bad-idea-to-throw-your-own-exceptions">
+<span class="md-ellipsis">
+      Why is it a bad idea to throw your own exceptions?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-a-delegate">
+<span class="md-ellipsis">
+      What’s a delegate?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-a-multicast-delegate">
+<span class="md-ellipsis">
+      What’s a multicast delegate?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hows-the-dll-hell-problem-solved-in-net">
+<span class="md-ellipsis">
+      How’s the DLL Hell problem solved in .NET?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-are-the-ways-to-deploy-an-assembly">
+<span class="md-ellipsis">
+      What are the ways to deploy an assembly?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-a-satellite-assembly">
+<span class="md-ellipsis">
+      What’s a satellite assembly?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-namespaces-are-necessary-to-create-a-localized-application">
+<span class="md-ellipsis">
+      What namespaces are necessary to create a localized application?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-the-difference-between-comments-comments-and-comments">
+<span class="md-ellipsis">
+      What’s the difference between // comments, / / comments and /// comments?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-do-you-generate-documentation-from-the-c-file-commented-properly-with-a-command-line-compiler">
+<span class="md-ellipsis">
+      How do you generate documentation from the C# file commented properly with a command-line compiler?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-the-difference-between-c-and-code-xml-documentation-tag">
+<span class="md-ellipsis">
+      What’s the difference between &lt;c&gt; and &lt;code&gt; XML documentation tag?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#is-xml-case-sensitive">
+<span class="md-ellipsis">
+      Is XML case-sensitive?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-debugging-tools-come-with-the-net-sdk">
+<span class="md-ellipsis">
+      What debugging tools come with the .NET SDK?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-does-the-this-window-show-in-the-debugger">
+<span class="md-ellipsis">
+      What does the This window show in the debugger?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-does-assert-do">
+<span class="md-ellipsis">
+      What does assert() do?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-the-difference-between-the-debug-class-and-trace-class-documentation-looks-the-same">
+<span class="md-ellipsis">
+      What’s the difference between the Debug class and Trace class? Documentation looks the same.
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why-are-there-five-tracing-levels-in-systemdiagnosticstraceswitcher">
+<span class="md-ellipsis">
+      Why are there five tracing levels in System.Diagnostics.TraceSwitcher?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#where-is-the-output-of-textwritertracelistener-redirected">
+<span class="md-ellipsis">
+      Where is the output of TextWriterTraceListener redirected?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-do-you-debug-an-aspnet-web-application">
+<span class="md-ellipsis">
+      How do you debug an ASP.NET Web application?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-are-three-test-cases-you-should-go-through-in-unit-testing">
+<span class="md-ellipsis">
+      What are three test cases you should go through in unit testing?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#can-you-change-the-value-of-a-variable-while-debugging-a-c-application">
+<span class="md-ellipsis">
+      Can you change the value of a variable while debugging a C# application?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#explain-the-three-services-model-three-tier-application">
+<span class="md-ellipsis">
+      Explain the three services model (three-tier application).
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-are-advantages-and-disadvantages-of-microsoft-provided-data-provider-classes-in-adonet">
+<span class="md-ellipsis">
+      What are advantages and disadvantages of Microsoft-provided data provider classes in ADO.NET?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-the-role-of-the-datareader-class-in-adonet-connections">
+<span class="md-ellipsis">
+      What’s the role of the DataReader class in ADO.NET connections?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-the-wildcard-character-in-sql-lets-say-you-want-to-query-database-with-like-for-all-employees-whose-name-starts-with-la">
+<span class="md-ellipsis">
+      What is the wildcard character in SQL? Let’s say you want to query database with LIKE for all employees whose name starts with La.
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#explain-acid-rule-of-thumb-for-transactions">
+<span class="md-ellipsis">
+      Explain ACID rule of thumb for transactions.
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-connections-does-microsoft-sql-server-support">
+<span class="md-ellipsis">
+      What connections does Microsoft SQL Server support?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#which-one-is-trusted-and-which-one-is-untrusted">
+<span class="md-ellipsis">
+      Which one is trusted and which one is untrusted?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why-would-you-use-untrusted-verificaion">
+<span class="md-ellipsis">
+      Why would you use untrusted verificaion?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-does-the-parameter-initial-catalog-define-inside-connection-string">
+<span class="md-ellipsis">
+      What does the parameter Initial Catalog define inside Connection String?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#whats-the-data-provider-name-to-connect-to-access-database">
+<span class="md-ellipsis">
+      What’s the data provider name to connect to Access database?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-does-dispose-method-do-with-the-connection-object">
+<span class="md-ellipsis">
+      What does Dispose method do with the connection object?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-a-pre-requisite-for-connection-pooling">
+<span class="md-ellipsis">
+      What is a pre-requisite for connection pooling?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-the-difference-between-a-where-clause-and-a-having-clause">
+<span class="md-ellipsis">
+      What is the difference between a "where" clause and a "having" clause?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-the-basic-form-of-a-sql-statement-to-read-data-out-of-a-table">
+<span class="md-ellipsis">
+      What is the basic form of a SQL statement to read data out of a table?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-structure-can-you-implement-for-the-database-to-speed-up-table-reads">
+<span class="md-ellipsis">
+      What structure can you implement for the database to speed up table reads?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-are-the-tradeoffs-with-having-indexes">
+<span class="md-ellipsis">
+      What are the tradeoffs with having indexes?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-a-join">
+<span class="md-ellipsis">
+      What is a "join"?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-normalization-denormalization-why-do-you-sometimes-want-to-denormalize">
+<span class="md-ellipsis">
+      What is "normalization"? "Denormalization"? Why do you sometimes want to denormalize?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-a-constraint">
+<span class="md-ellipsis">
+      What is a "constraint"?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-types-of-index-data-structures-can-you-have">
+<span class="md-ellipsis">
+      What types of index data structures can you have?
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="dotnet-qa">dotNET QA</h1>
+<h2 id="whats-the-advantage-of-using-systemtextstringbuilder-over-systemstring">What’s the advantage of using System.Text.StringBuilder over System.String?</h2>
+<p>StringBuilder is more efficient in the cases, where a lot of manipulation is done to the text. 
+Strings are immutable, so each time it’s being operated on, a new instance is created.</p>
+<h2 id="can-you-store-multiple-data-types-in-systemarray">Can you store multiple data types in System.Array?</h2>
+<p>No.</p>
+<h2 id="how-can-you-sort-the-elements-of-the-array-in-descending-order">How can you sort the elements of the array in descending order?</h2>
+<p>By calling Sort() and then Reverse() methods.</p>
+<h2 id="whats-the-net-datatype-that-allows-the-retrieval-of-data-by-a-unique-key">What’s the .NET datatype that allows the retrieval of data by a unique key?</h2>
+<p>HashTable.</p>
+<h2 id="whats-class-sortedlist-underneath">What’s class SortedList underneath?</h2>
+<p>A sorted HashTable.</p>
+<h2 id="will-finally-block-get-executed-if-the-exception-had-not-occurred">Will finally block get executed if the exception had not occurred?</h2>
+<p>Yes.</p>
+<h2 id="whats-the-c-equivalent-of-c-catch-which-was-a-catch-all-statement-for-any-possible-exception">What’s the C# equivalent of C++ catch (…), which was a catch-all statement for any possible exception?</h2>
+<p>A catch block that catches the exception of type System.Exception. You can also omit the parameter data type in this case and just write catch {}.</p>
+<h2 id="can-multiple-catch-blocks-be-executed">Can multiple catch blocks be executed?</h2>
+<p>No, once the proper catch code fires off, the control is transferred to the finally block (if there are any), and then whatever follows the finally block.</p>
+<h2 id="why-is-it-a-bad-idea-to-throw-your-own-exceptions">Why is it a bad idea to throw your own exceptions?</h2>
+<p>Well, if at that point you know that an error has occurred, then why not write the proper code to handle that error instead of passing a new Exception object to the catch block? Throwing your own exceptions signifies some design flaws in the project.</p>
+<h2 id="whats-a-delegate">What’s a delegate?</h2>
+<p>A delegate object encapsulates a reference to a method. In C++ they were referred to as function pointers.</p>
+<h2 id="whats-a-multicast-delegate">What’s a multicast delegate?</h2>
+<p>It’s a delegate that points to and eventually fires off several methods.</p>
+<h2 id="hows-the-dll-hell-problem-solved-in-net">How’s the DLL Hell problem solved in .NET?</h2>
+<p>Assembly versioning allows the application to specify not only the library it needs to run (which was available under Win32), but also the version of the assembly.</p>
+<h2 id="what-are-the-ways-to-deploy-an-assembly">What are the ways to deploy an assembly?</h2>
+<p>An MSI installer, a CAB archive, and XCOPY command.</p>
+<h2 id="whats-a-satellite-assembly">What’s a satellite assembly?</h2>
+<p>When you write a multilingual or multi-cultural application in .NET, and want to distribute the core application separately from the localized modules, the localized assemblies that modify the core application are called satellite assemblies.</p>
+<h2 id="what-namespaces-are-necessary-to-create-a-localized-application">What namespaces are necessary to create a localized application?</h2>
+<p>System.Globalization, System.Resources.</p>
+<h2 id="whats-the-difference-between-comments-comments-and-comments">What’s the difference between // comments, /<em> </em>/ comments and /// comments?</h2>
+<p>Single-line, multi-line and XML documentation comments.</p>
+<h2 id="how-do-you-generate-documentation-from-the-c-file-commented-properly-with-a-command-line-compiler">How do you generate documentation from the C# file commented properly with a command-line compiler?</h2>
+<p>Compile it with a /doc switch.</p>
+<h2 id="whats-the-difference-between-c-and-code-xml-documentation-tag">What’s the difference between <code>&lt;c&gt;</code> and <code>&lt;code&gt;</code> XML documentation tag?</h2>
+<p>Single line code example and multiple-line code example.</p>
+<h2 id="is-xml-case-sensitive">Is XML case-sensitive?</h2>
+<p>Yes, so <code>&lt;Student&gt;</code> and <code>&lt;student&gt;</code> are different elements.</p>
+<h2 id="what-debugging-tools-come-with-the-net-sdk">What debugging tools come with the .NET SDK?</h2>
+<p>CorDBG – command-line debugger, and DbgCLR – graphic debugger. Visual Studio .NET uses the DbgCLR. To use CorDbg, you must compile the original C# file using the /debug switch.</p>
+<h2 id="what-does-the-this-window-show-in-the-debugger">What does the This window show in the debugger?</h2>
+<p>It points to the object that’s pointed to by this reference. Object’s instance data is shown.</p>
+<h2 id="what-does-assert-do">What does <code>assert()</code> do?</h2>
+<p>In debug compilation, assert takes in a Boolean condition as a parameter, and shows the error dialog if the condition is false. The program proceeds without any interruption if the condition is true.</p>
+<h2 id="whats-the-difference-between-the-debug-class-and-trace-class-documentation-looks-the-same">What’s the difference between the Debug class and Trace class? Documentation looks the same.</h2>
+<p>Use Debug class for debug builds, use Trace class for both debug and release builds.</p>
+<h2 id="why-are-there-five-tracing-levels-in-systemdiagnosticstraceswitcher">Why are there five tracing levels in System.Diagnostics.TraceSwitcher?</h2>
+<p>The tracing dumps can be quite verbose and for some applications that are constantly running you run the risk of overloading the machine and the hard drive there. Five levels range from None to Verbose, allowing to fine-tune the tracing activities.</p>
+<h2 id="where-is-the-output-of-textwritertracelistener-redirected">Where is the output of TextWriterTraceListener redirected?</h2>
+<p>To the Console or a text file depending on the parameter passed to the constructor.</p>
+<h2 id="how-do-you-debug-an-aspnet-web-application">How do you debug an ASP.NET Web application?</h2>
+<p>Attach the aspnet_wp.exe process to the DbgClr debugger.</p>
+<h2 id="what-are-three-test-cases-you-should-go-through-in-unit-testing">What are three test cases you should go through in unit testing?</h2>
+<p>Positive test cases (correct data, correct output), 
+negative test cases (broken or missing data, proper handling), 
+exception test cases (exceptions are thrown and caught properly).</p>
+<h2 id="can-you-change-the-value-of-a-variable-while-debugging-a-c-application">Can you change the value of a variable while debugging a C# application?</h2>
+<p>Yes, if you are debugging via Visual Studio.NET, just go to Immediate window.</p>
+<h2 id="explain-the-three-services-model-three-tier-application">Explain the three services model (three-tier application).</h2>
+<p>Presentation (UI), business (logic and underlying code) and data (from storage or other sources).</p>
+<h2 id="what-are-advantages-and-disadvantages-of-microsoft-provided-data-provider-classes-in-adonet">What are advantages and disadvantages of Microsoft-provided data provider classes in ADO.NET?</h2>
+<p>SQLServer.NET data provider is high-speed and robust, but requires SQL Server license purchased from Microsoft. OLE-DB.NET is universal for accessing other sources, like Oracle, DB2, Microsoft Access and Informix, but it’s a .NET layer on top of OLE layer, so not the fastest thing in the world. ODBC.NET is a deprecated layer provided for backward compatibility to ODBC engines.</p>
+<h2 id="whats-the-role-of-the-datareader-class-in-adonet-connections">What’s the role of the DataReader class in ADO.NET connections?</h2>
+<p>It returns a read-only dataset from the data source when the command is executed.</p>
+<h2 id="what-is-the-wildcard-character-in-sql-lets-say-you-want-to-query-database-with-like-for-all-employees-whose-name-starts-with-la">What is the wildcard character in SQL? Let’s say you want to query database with LIKE for all employees whose name starts with La.</h2>
+<p>The wildcard character is %, the proper query with LIKE would involve ‘La%’.</p>
+<h2 id="explain-acid-rule-of-thumb-for-transactions">Explain ACID rule of thumb for transactions.</h2>
+<p>Transaction must be 
+* Atomic (it is one unit of work and does not dependent on previous and following transactions), 
+* Consistent (data is either committed or roll back, no “in-between” case where something has been updated and something hasn’t), 
+* Isolated (no transaction sees the intermediate results of the current transaction), 
+* Durable (the values persist if the data had been committed even if the system crashes right after).</p>
+<h2 id="what-connections-does-microsoft-sql-server-support">What connections does Microsoft SQL Server support?</h2>
+<p>Windows Authentication (via Active Directory) and SQL Server authentication (via Microsoft SQL Server username and passwords).</p>
+<h2 id="which-one-is-trusted-and-which-one-is-untrusted">Which one is trusted and which one is untrusted?</h2>
+<p>Windows Authentication is trusted because the username and password are checked with the Active Directory, the SQL Server authentication is untrusted, since SQL Server is the only verifier participating in the transaction.</p>
+<h2 id="why-would-you-use-untrusted-verificaion">Why would you use untrusted verificaion?</h2>
+<p>Web Services might use it, as well as non-Windows applications.</p>
+<h2 id="what-does-the-parameter-initial-catalog-define-inside-connection-string">What does the parameter Initial Catalog define inside Connection String?</h2>
+<p>The database name to connect to.</p>
+<h2 id="whats-the-data-provider-name-to-connect-to-access-database">What’s the data provider name to connect to Access database?</h2>
+<p>Microsoft.Access.</p>
+<h2 id="what-does-dispose-method-do-with-the-connection-object">What does Dispose method do with the connection object?</h2>
+<p>Deletes it from the memory.</p>
+<h2 id="what-is-a-pre-requisite-for-connection-pooling">What is a pre-requisite for connection pooling?</h2>
+<p>Multiple processes must agree that they will share the same connection, where every parameter is the same, including the security settings.</p>
+<h2 id="what-is-the-difference-between-a-where-clause-and-a-having-clause">What is the difference between a "where" clause and a "having" clause?</h2>
+<p>"Where" is a kind of restriction statement. You use where clause to restrict all the data from DB.Where clause is using before result retrieving. 
+But Having clause is using after retrieving the data.Having clause is a kind of filtering command.</p>
+<h2 id="what-is-the-basic-form-of-a-sql-statement-to-read-data-out-of-a-table">What is the basic form of a SQL statement to read data out of a table?</h2>
+<p>The basic form to read data out of table is ‘SELECT * FROM table_name; ‘ 
+An answer: ‘SELECT * FROM table_name WHERE xyz= ‘whatever’;’ cannot be called basic form because of WHERE clause.</p>
+<h2 id="what-structure-can-you-implement-for-the-database-to-speed-up-table-reads">What structure can you implement for the database to speed up table reads?</h2>
+<p>Follow the rules of DB tuning we have to: 
+1. properly use indexes ( different types of indexes)
+1. properly locate different DB objects across different table spaces, files and so on.
+1. create a special space (table space) to locate some of the data with special datatype ( for example CLOB, LOB and …)</p>
+<h2 id="what-are-the-tradeoffs-with-having-indexes">What are the tradeoffs with having indexes?</h2>
+<p>Faster selects, slower updates. 
+Extra storage space to store indexes. 
+Updates are slower because in addition to updating the table you have to update the index.</p>
+<h2 id="what-is-a-join">What is a "join"?</h2>
+<p>‘join’ used to connect two or more tables logically with or without common field.</p>
+<h2 id="what-is-normalization-denormalization-why-do-you-sometimes-want-to-denormalize">What is "normalization"? "Denormalization"? Why do you sometimes want to denormalize?</h2>
+<p>Normalizing data means eliminating redundant information from a table and organizing the data so that future changes to the table are easier. 
+Denormalization means allowing redundancy in a table. The main benefit of denormalization is improved performance with simplified data retrieval and manipulation. This is done by reduction in the number of joins needed for data processing.</p>
+<h2 id="what-is-a-constraint">What is a "constraint"?</h2>
+<p>A constraint allows you to apply simple referential integrity checks to a table. 
+There are four primary types of constraints that are currently supported by SQL Server: 
+* PRIMARY/UNIQUE - enforces uniqueness of a particular table column. 
+* DEFAULT - specifies a default value for a column in case an insert operation does not provide one. 
+* FOREIGN KEY - validates that every value in a column exists in a column of another table. 
+* CHECK - checks that every value stored in a column is in some specified list. Each type of constraint performs a specific type of action. 
+* Default is not a constraint. 
+* NOT NULL is one more constraint which does not allow values in the specific column to be null. And also it the only constraint which is not a table level constraint.</p>
+<h2 id="what-types-of-index-data-structures-can-you-have">What types of index data structures can you have?</h2>
+<p>An index helps to faster search values in tables. The three most commonly used index-types are: - B-Tree: builds a tree of possible values with a list of row IDs that have the leaf value. Needs a lot of space and is the default index type for most databases. - Bitmap: string of bits for each possible value of the column. Each bit string has one bit for each row. Needs only few space and is very fast.(however, domain of value cannot be large, e.g. SEX(m,f); degree(BS,MS,PHD) - Hash: A hashing algorithm is used to assign a set of characters to represent a text string such as a composite of keys or partial keys, and compresses the underlying data. Takes longer to build and is supported by relatively few databases.</p>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>
